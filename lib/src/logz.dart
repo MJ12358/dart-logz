@@ -6,7 +6,6 @@ enum _Color {
   green('\x1B[32m'),
 
   /// Yellow - Used for warning messages.
-
   yellow('\x1B[33m'),
 
   /// Red - Used for error messages.
@@ -96,3 +95,6 @@ class Logz {
     }
   }
 }
+
+/// Global access to the singleton instance of [Logz].
+final Logz logz = Logz();

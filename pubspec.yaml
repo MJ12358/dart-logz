@@ -1,6 +1,6 @@
 name: dart_logz
 description: A stupid simple logging package for Dart.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/MJ12358/dart-logz
 funding:
   - https://www.buymeacoffee.com/mj12358
