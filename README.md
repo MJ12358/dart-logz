@@ -1,2 +1,3 @@
-# dart-logz
-A stupid simple logging package for Dart.
+# Dart Logz
+
+![pub package](https://img.shields.io/pub/v/dart_logz)
