@@ -4,7 +4,8 @@ import 'package:test/test.dart';
 void main() {
   test('Test', () {
     final Logz logz = Logz();
-    logz.debugMode = true;
+
+    LogzConfig.debugMode = true;
 
     logz.i('This is an info message.');
     logz.s('This is a success message.');

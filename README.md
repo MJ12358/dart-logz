@@ -7,6 +7,8 @@
 ## Usage
 
 ```dart
+LogzConfig.debugMode = true;
+
 logz.i('This is an info message.');
 logz.s('This is a success message.');
 logz.w('This is a warning message.');

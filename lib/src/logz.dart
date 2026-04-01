@@ -1,37 +1,9 @@
 part of dart_logz;
 
-/// The color codes for terminal output.
-enum _Color {
-  /// Green - Used for success messages.
-  green('\x1B[32m'),
-
-  /// Yellow - Used for warning messages.
-  yellow('\x1B[33m'),
-
-  /// Red - Used for error messages.
-  red('\x1B[31m'),
-
-  /// Cyan - Used for debug messages.
-  cyan('\x1B[36m'),
-
-  /// Magenta - Used for fatal messages.
-  magenta('\x1B[35m'),
-
-  /// Reset - Resets the color to default.
-  reset('\x1B[0m');
-
-  /// The ANSI escape code for the color.
-  final String code;
-
-  /// Constructor to initialize the color code.
-  const _Color(this.code);
-}
-
 /// {@template dart_logz}
-/// A logging utility that provides color-coded log messages for different
-/// log levels such as info, success, warning, error, debug, and fatal.
-/// It supports a singleton pattern and optional debug mode for detailed
-/// logging.
+/// A logging utility that provides color-coded
+/// log messages for different log levels such as
+/// info, success, warning, error, debug, and fatal.
 /// {@endtemplate}
 class Logz {
   /// {@macro dart_logz}
@@ -44,9 +16,6 @@ class Logz {
 
   /// Singleton instance.
   static final Logz _instance = Logz._internal();
-
-  /// Whether to show debug logs.
-  bool debugMode = false;
 
   /// Info - Prints with no special formatting.
   void i(String message) {
@@ -71,7 +40,7 @@ class Logz {
   /// Debug - Prints in [_Color.cyan] to indicate debug information.
   /// Only shown in debug mode.
   void d(String message) {
-    if (debugMode) {
+    if (LogzConfig.debugMode) {
       _print('Debug: $message', _Color.cyan);
     }
   }
@@ -81,7 +50,7 @@ class Logz {
   void f(String message, Object error, [StackTrace? stackTrace]) {
     _print('Fatal: $message', _Color.magenta);
     _print('  Details: $error', _Color.magenta);
-    if (debugMode && stackTrace != null) {
+    if (LogzConfig.debugMode && stackTrace != null) {
       _print('  Stack trace: $stackTrace', _Color.magenta);
     }
   }

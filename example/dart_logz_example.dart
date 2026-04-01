@@ -2,7 +2,8 @@ import 'package:dart_logz/dart_logz.dart';
 
 void main() {
   final Logz logz = Logz();
-  logz.debugMode = true;
+
+  LogzConfig.debugMode = true;
 
   logz.i('This is an info message.');
   logz.s('This is a success message.');

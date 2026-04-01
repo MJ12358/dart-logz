@@ -1,5 +1,9 @@
 # Dart Logz
 
+## [1.0.0]
+
+- Initial release.
+
 ## [0.0.2]
 
 - Add global instance access.
