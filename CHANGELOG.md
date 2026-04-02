@@ -1,5 +1,10 @@
 # Dart Logz
 
+## [1.0.1]
+
+- Add thumbnail to pub.dev.
+- Update readme.
+
 ## [1.0.0]
 
 - Initial release.
