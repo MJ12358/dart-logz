@@ -1,5 +1,10 @@
 # Dart Logz
 
+## [1.0.2]
+
+- Fix static analysis warning: "part-of directive uses a library name"
+- Make `LogzConfig` abstract to remove the need for a private constructor to prevent instantiation.
+
 ## [1.0.1]
 
 - Add thumbnail to pub.dev.

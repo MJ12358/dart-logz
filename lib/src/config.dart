@@ -1,14 +1,9 @@
-part of dart_logz;
+part of '../dart_logz.dart';
 
 /// {@template dart_logz.config}
 /// Configuration options for the [Logz] logging utility.
 /// {@endtemplate}
-class LogzConfig {
-  /// {@macro dart_logz.config}
-  ///
-  /// Private constructor to prevent instantiation.
-  LogzConfig._();
-
+abstract class LogzConfig {
   /// Whether to show debug logs.
   static bool debugMode = false;
 }

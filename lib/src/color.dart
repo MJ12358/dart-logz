@@ -1,4 +1,4 @@
-part of dart_logz;
+part of '../dart_logz.dart';
 
 /// {@template dart_logz.color}
 /// The color codes for terminal output.

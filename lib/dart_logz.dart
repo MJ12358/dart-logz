@@ -1,5 +1,3 @@
-library dart_logz;
-
 import 'dart:io';
 
 part 'src/color.dart';

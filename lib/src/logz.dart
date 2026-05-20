@@ -1,4 +1,4 @@
-part of dart_logz;
+part of '../dart_logz.dart';
 
 /// {@template dart_logz}
 /// A logging utility that provides color-coded
