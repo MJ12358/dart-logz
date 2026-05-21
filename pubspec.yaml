@@ -1,6 +1,6 @@
 name: dart_logz
 description: A stupid simple logging package for Dart with colorful output.
-version: 1.0.2
+version: 1.0.3
 repository: https://github.com/MJ12358/dart-logz
 screenshots:
   - description: Dart Logz Thumbnail
@@ -8,12 +8,15 @@ screenshots:
 funding:
   - https://www.buymeacoffee.com/mj12358
 topics:
+  - cli
+  - console
   - dart
+  - debugging
   - logging
 
 environment:
-  sdk: ^3.11.1
+  sdk: ">=3.0.0 <4.0.0"
 
 dev_dependencies:
-  dart_lintz: 1.2.4
-  test: 1.31.0
+  dart_lintz: 2.0.1
+  test: 1.31.1

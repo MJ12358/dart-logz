@@ -1,5 +1,11 @@
 # Dart Logz
 
+## [1.0.3]
+
+- Fix lint issues.
+- Relax Dart version constraint.
+- Update dependencies.
+
 ## [1.0.2]
 
 - Fix static analysis warning: "part-of directive uses a library name"

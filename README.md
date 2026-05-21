@@ -2,7 +2,7 @@
 
 ![pub package](https://img.shields.io/pub/v/dart_logz)
 
-- A stupid simple logging package for Dart.
+- A stupid simple logging package for Dart with colorful output.
 
 ## Usage
 

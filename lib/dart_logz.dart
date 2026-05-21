@@ -1,3 +1,5 @@
+/// A stupid simple logging package for Dart with colorful output.
+
 import 'dart:io';
 
 part 'src/color.dart';
