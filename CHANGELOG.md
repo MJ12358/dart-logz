@@ -1,5 +1,9 @@
 # Dart Logz
 
+## [1.0.4]
+
+- Fix lint issue.
+
 ## [1.0.3]
 
 - Fix lint issues.

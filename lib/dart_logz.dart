@@ -1,4 +1,5 @@
 /// A stupid simple logging package for Dart with colorful output.
+library;
 
 import 'dart:io';
 
